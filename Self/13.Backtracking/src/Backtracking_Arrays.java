@@ -20,10 +20,10 @@ public class Backtracking_Arrays {
         printArr(arr);
         return;
         }
-
+        //recursion
         arr[i]=val;
-        changeArr(arr, i+1, val+2);
-        arr[i]=arr[i]-2;
+        changeArr(arr, i+1, val+2);  //function call step
+        arr[i]=arr[i]-2;  //backtracking step
     }
     public static void printArr(int arr[]){
         for(int i =0;i<arr.length;i++){
